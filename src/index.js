@@ -17,7 +17,6 @@ const listArray = [
     index: 2,
   },
 ];
-/* <i class="fa-regular fa-trash-can fa-beat fa-lg remove"></i> */
 const list = document.querySelector('.list-container');
 listArray.forEach((elm) => {
   const li = document.createElement('li');
