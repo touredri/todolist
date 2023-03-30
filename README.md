@@ -1,14 +1,6 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <h1>Drissa Toure<h1>
-  <br/>
-  
-  <h3><b>To do list</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
