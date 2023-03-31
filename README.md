@@ -8,7 +8,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  
+   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -63,6 +63,13 @@ This To do List project is based on an online website that allows users to add/r
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+- [Live Demo Link]( https://touredri.github.io/todolist/dist/)
+
+
+<!-- - [video Link](https://www.loom.com/share/1f2943ca12ee4b4e97db22f208077ecb) -->
 
 <!-- GETTING STARTED -->
 
