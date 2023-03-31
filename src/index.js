@@ -1,5 +1,6 @@
 import './index.css';
 import List from './list.js';
+import { complete, removeTask } from './status.js';
 
 const newtask = document.querySelector('#newtask');
 window.addEventListener('keydown', (e) => {
@@ -11,6 +12,9 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
+complete();
+
 window.addEventListener('load', () => {
   List.load();
 });
+removeTask();
