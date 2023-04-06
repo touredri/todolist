@@ -1,5 +1,5 @@
 import List from './src/list.js';
-import { complete } from './src/status.js';
+import { complete, removeTask } from './src/status.js';
 
 jest.mock('./src/list.js');
 jest.mock('./src/status.js');
@@ -18,5 +18,10 @@ describe('Task manipulation', () => {
     complete();
 
     expect(JSON.parse(localStorage.getItem('list'))[0].complete).not.toBe(oldStatus);
+  });
+
+  test('Delete all complete task', () => {
+    removeTask();
+    expect(JSON.parse(localStorage.getItem('list')).length).toBe(1);
   });
 });
