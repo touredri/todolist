@@ -1,7 +1,8 @@
 import List from './src/list.js';
-import { complete, removeTask } from './src/status.js';
+import { complete } from './src/status.js';
 
 jest.mock('./src/list.js');
+jest.mock('./src/status.js');
 
 describe('Task manipulation', () => {
   test('Edit task', () => {
@@ -12,13 +13,10 @@ describe('Task manipulation', () => {
     expect(List.listArray[0].description).toBe('new task');
   });
 
-//   test('Update completed task checkbox', () => {
-//     const task = new List('task');
-//     task.index = 1;
-//     List.listArray.push(task);
-//     complete();
-//     const checkbox = document.querySelector('.checkbox');
-//     checkbox.click();
-//     expect(List.listArray[0].complete).toBe(true);
-//   });
+  test('Update completed task checkbox', () => {
+    const oldStatus = JSON.parse(localStorage.getItem('list'))[0].complete;
+    complete();
+
+    expect(JSON.parse(localStorage.getItem('list'))[0].complete).not.toBe(oldStatus);
+  });
 });

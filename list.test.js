@@ -1,5 +1,7 @@
+import { jest } from '@jest/globals';
 import List from './src/list.js';
 
+// jest.mock('./src/list.js');
 jest.mock('./src/list.js');
 
 describe('List Functions', () => {
