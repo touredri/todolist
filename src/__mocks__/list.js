@@ -23,4 +23,12 @@ export default class List {
     List.listArray = filterList;
     localStorage.setItem('list', JSON.stringify(List.listArray));
   }
+
+  static edit(id, updatedDescription) {
+    const task = List.listArray.find((task) => task.index === id);
+    if (task) {
+      task.description = updatedDescription;
+      localStorage.setItem('list', JSON.stringify(List.listArray));
+    }
+  }
 }
